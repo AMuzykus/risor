@@ -7,12 +7,13 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"net/url"
 	"strings"
 	"time"
 
-	"github.com/risor-io/risor/limits"
-	"github.com/risor-io/risor/object"
-	"github.com/risor-io/risor/op"
+	"github.com/AMuzykus/risor/limits"
+	"github.com/AMuzykus/risor/object"
+	"github.com/AMuzykus/risor/op"
 )
 
 const HTTP_REQUEST object.Type = "http_request"
@@ -327,18 +328,31 @@ func (r *HttpRequest) SetData(dataObj object.Object) *object.Error {
 		r.req.ContentLength = 0
 		return nil
 	}
-	data, err := json.Marshal(dataObj.Interface())
-	if err != nil {
-		return object.NewError(err)
-	}
-	body := bytes.NewBuffer(data)
+	switch r.req.Header.Get("Content-Type") {
+	case "application/x-www-form-urlencoded":
+		values := url.Values{}
+		for k, v := range dataObj.Interface().(map[string]any) {
+			values.Add(k, v.(string))
+		}
+		data := []byte(values.Encode())
+		body := bytes.NewBuffer(data)
 
-	r.req.Body = io.NopCloser(body)
-	r.req.ContentLength = int64(len(data))
+		r.req.Body = io.NopCloser(body)
+		r.req.ContentLength = int64(len(data))
+	default:
+		data, err := json.Marshal(dataObj.Interface())
+		if err != nil {
+			return object.NewError(err)
+		}
+		body := bytes.NewBuffer(data)
 
-	// Automatically set content type if JSON data was supplied
-	if r.req.Header.Get("Content-Type") == "" {
-		r.req.Header.Set("Content-Type", "application/json")
+		r.req.Body = io.NopCloser(body)
+		r.req.ContentLength = int64(len(data))
+
+		// Automatically set content type if JSON data was supplied
+		if r.req.Header.Get("Content-Type") == "" {
+			r.req.Header.Set("Content-Type", "application/json")
+		}
 	}
 
 	return nil
