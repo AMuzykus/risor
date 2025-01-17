@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/risor-io/risor/errz"
-	"github.com/risor-io/risor/op"
+	"github.com/AMuzykus/risor/errz"
+	"github.com/AMuzykus/risor/op"
 )
 
 // GoMethod represents a single method on a Go type. This exposes the method to

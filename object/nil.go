@@ -1,8 +1,8 @@
 package object
 
 import (
-	"github.com/risor-io/risor/errz"
-	"github.com/risor-io/risor/op"
+	"github.com/AMuzykus/risor/errz"
+	"github.com/AMuzykus/risor/op"
 )
 
 type NilType struct {

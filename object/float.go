@@ -5,8 +5,8 @@ import (
 	"math"
 	"strconv"
 
-	"github.com/risor-io/risor/errz"
-	"github.com/risor-io/risor/op"
+	"github.com/AMuzykus/risor/errz"
+	"github.com/AMuzykus/risor/op"
 )
 
 // Float wraps float64 and implements Object and Hashable interfaces.

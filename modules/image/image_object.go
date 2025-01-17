@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"image"
 
+	"github.com/AMuzykus/risor/errz"
+	"github.com/AMuzykus/risor/object"
+	"github.com/AMuzykus/risor/op"
 	"github.com/anthonynsimon/bild/imgio"
-	"github.com/risor-io/risor/errz"
-	"github.com/risor-io/risor/object"
-	"github.com/risor-io/risor/op"
 )
 
 type Image struct {

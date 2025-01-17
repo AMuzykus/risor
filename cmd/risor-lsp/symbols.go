@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 
+	"github.com/AMuzykus/risor/ast"
 	"github.com/jdbaldry/go-language-server-protocol/lsp/protocol"
-	"github.com/risor-io/risor/ast"
 	"github.com/rs/zerolog/log"
 )
 

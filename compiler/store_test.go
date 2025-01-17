@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/risor-io/risor/op"
-	"github.com/risor-io/risor/parser"
+	"github.com/AMuzykus/risor/op"
+	"github.com/AMuzykus/risor/parser"
 	"github.com/stretchr/testify/require"
 )
 

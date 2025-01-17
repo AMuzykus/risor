@@ -8,6 +8,9 @@ import (
 	"reflect"
 	"unicode"
 
+	"github.com/AMuzykus/risor/errz"
+	"github.com/AMuzykus/risor/object"
+	"github.com/AMuzykus/risor/op"
 	"github.com/aws/aws-sdk-go-v2/service/apigatewayv2"
 	"github.com/aws/aws-sdk-go-v2/service/athena"
 	"github.com/aws/aws-sdk-go-v2/service/backup"
@@ -44,9 +47,6 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/sts"
 	"github.com/aws/aws-sdk-go-v2/service/wafv2"
 	"github.com/aws/aws-sdk-go-v2/service/xray"
-	"github.com/risor-io/risor/errz"
-	"github.com/risor-io/risor/object"
-	"github.com/risor-io/risor/op"
 )
 
 type Client struct {

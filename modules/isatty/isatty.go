@@ -4,9 +4,9 @@ import (
 	"context"
 	"os"
 
+	"github.com/AMuzykus/risor/object"
+	ros "github.com/AMuzykus/risor/os"
 	"github.com/mattn/go-isatty"
-	"github.com/risor-io/risor/object"
-	ros "github.com/risor-io/risor/os"
 )
 
 func IsTerminal(ctx context.Context, args ...object.Object) object.Object {

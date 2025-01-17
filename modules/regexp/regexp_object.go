@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/risor-io/risor/object"
-	"github.com/risor-io/risor/op"
+	"github.com/AMuzykus/risor/object"
+	"github.com/AMuzykus/risor/op"
 )
 
 const REGEXP object.Type = "regexp"

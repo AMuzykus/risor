@@ -4,7 +4,7 @@
 package aws
 
 import (
-	"github.com/risor-io/risor/object"
+	"github.com/AMuzykus/risor/object"
 )
 
 func Module() *object.Module {

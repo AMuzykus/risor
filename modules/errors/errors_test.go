@@ -5,8 +5,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/risor-io/risor/errz"
-	"github.com/risor-io/risor/object"
+	"github.com/AMuzykus/risor/errz"
+	"github.com/AMuzykus/risor/object"
 	"github.com/stretchr/testify/require"
 )
 

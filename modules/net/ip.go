@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/risor-io/risor/arg"
-	"github.com/risor-io/risor/object"
-	"github.com/risor-io/risor/op"
+	"github.com/AMuzykus/risor/arg"
+	"github.com/AMuzykus/risor/object"
+	"github.com/AMuzykus/risor/op"
 )
 
 var _ object.Object = (*IP)(nil)

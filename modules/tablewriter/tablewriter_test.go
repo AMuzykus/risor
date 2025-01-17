@@ -5,8 +5,8 @@ import (
 	"context"
 	"testing"
 
+	"github.com/AMuzykus/risor/object"
 	"github.com/olekukonko/tablewriter"
-	"github.com/risor-io/risor/object"
 	"github.com/stretchr/testify/require"
 )
 

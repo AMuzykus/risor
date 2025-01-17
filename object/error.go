@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/risor-io/risor/errz"
-	"github.com/risor-io/risor/op"
+	"github.com/AMuzykus/risor/errz"
+	"github.com/AMuzykus/risor/op"
 )
 
 // Error wraps a Go error interface and implements Object.

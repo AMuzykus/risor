@@ -1,24 +1,24 @@
-module github.com/risor-io/risor/cmd/risor
+module github.com/AMuzykus/risor/cmd/risor
 
 go 1.22.1
 
 replace (
-	github.com/risor-io/risor => ../..
-	github.com/risor-io/risor/modules/aws => ../../modules/aws
-	github.com/risor-io/risor/modules/bcrypt => ../../modules/bcrypt
-	github.com/risor-io/risor/modules/carbon => ../../modules/carbon
-	github.com/risor-io/risor/modules/cli => ../../modules/cli
-	github.com/risor-io/risor/modules/gha => ../../modules/gha
-	github.com/risor-io/risor/modules/image => ../../modules/image
-	github.com/risor-io/risor/modules/jmespath => ../../modules/jmespath
-	github.com/risor-io/risor/modules/kubernetes => ../../modules/kubernetes
-	github.com/risor-io/risor/modules/pgx => ../../modules/pgx
-	github.com/risor-io/risor/modules/semver => ../../modules/semver
-	github.com/risor-io/risor/modules/sql => ../../modules/sql
-	github.com/risor-io/risor/modules/template => ../../modules/template
-	github.com/risor-io/risor/modules/uuid => ../../modules/uuid
-	github.com/risor-io/risor/modules/vault => ../../modules/vault
-	github.com/risor-io/risor/os/s3fs => ../../os/s3fs
+	github.com/AMuzykus/risor => ../..
+	github.com/AMuzykus/risor/modules/aws => ../../modules/aws
+	github.com/AMuzykus/risor/modules/bcrypt => ../../modules/bcrypt
+	github.com/AMuzykus/risor/modules/carbon => ../../modules/carbon
+	github.com/AMuzykus/risor/modules/cli => ../../modules/cli
+	github.com/AMuzykus/risor/modules/gha => ../../modules/gha
+	github.com/AMuzykus/risor/modules/image => ../../modules/image
+	github.com/AMuzykus/risor/modules/jmespath => ../../modules/jmespath
+	github.com/AMuzykus/risor/modules/kubernetes => ../../modules/kubernetes
+	github.com/AMuzykus/risor/modules/pgx => ../../modules/pgx
+	github.com/AMuzykus/risor/modules/semver => ../../modules/semver
+	github.com/AMuzykus/risor/modules/sql => ../../modules/sql
+	github.com/AMuzykus/risor/modules/template => ../../modules/template
+	github.com/AMuzykus/risor/modules/uuid => ../../modules/uuid
+	github.com/AMuzykus/risor/modules/vault => ../../modules/vault
+	github.com/AMuzykus/risor/os/s3fs => ../../os/s3fs
 )
 
 require (
@@ -29,22 +29,22 @@ require (
 	github.com/hokaccha/go-prettyjson v0.0.0-20211117102719-0474bc63780f
 	github.com/mattn/go-isatty v0.0.20
 	github.com/mitchellh/go-homedir v1.1.0
-	github.com/risor-io/risor v1.7.0
-	github.com/risor-io/risor/modules/aws v1.7.0
-	github.com/risor-io/risor/modules/bcrypt v1.7.0
-	github.com/risor-io/risor/modules/carbon v1.7.0
-	github.com/risor-io/risor/modules/cli v1.7.0
-	github.com/risor-io/risor/modules/gha v1.6.1-0.20240927135333-245e7b83abf4
-	github.com/risor-io/risor/modules/image v1.7.0
-	github.com/risor-io/risor/modules/jmespath v1.7.0
-	github.com/risor-io/risor/modules/kubernetes v1.7.0
-	github.com/risor-io/risor/modules/pgx v1.7.0
-	github.com/risor-io/risor/modules/semver v1.7.0
-	github.com/risor-io/risor/modules/sql v1.7.0
-	github.com/risor-io/risor/modules/template v1.7.0
-	github.com/risor-io/risor/modules/uuid v1.7.0
-	github.com/risor-io/risor/modules/vault v1.7.0
-	github.com/risor-io/risor/os/s3fs v1.7.0
+	github.com/AMuzykus/risor v1.7.0
+	github.com/AMuzykus/risor/modules/aws v1.7.0
+	github.com/AMuzykus/risor/modules/bcrypt v1.7.0
+	github.com/AMuzykus/risor/modules/carbon v1.7.0
+	github.com/AMuzykus/risor/modules/cli v1.7.0
+	github.com/AMuzykus/risor/modules/gha v1.6.1-0.20240927135333-245e7b83abf4
+	github.com/AMuzykus/risor/modules/image v1.7.0
+	github.com/AMuzykus/risor/modules/jmespath v1.7.0
+	github.com/AMuzykus/risor/modules/kubernetes v1.7.0
+	github.com/AMuzykus/risor/modules/pgx v1.7.0
+	github.com/AMuzykus/risor/modules/semver v1.7.0
+	github.com/AMuzykus/risor/modules/sql v1.7.0
+	github.com/AMuzykus/risor/modules/template v1.7.0
+	github.com/AMuzykus/risor/modules/uuid v1.7.0
+	github.com/AMuzykus/risor/modules/vault v1.7.0
+	github.com/AMuzykus/risor/os/s3fs v1.7.0
 	github.com/spf13/cobra v1.8.1
 	github.com/spf13/viper v1.19.0
 	github.com/stretchr/testify v1.9.0

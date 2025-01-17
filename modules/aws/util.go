@@ -4,8 +4,8 @@
 package aws
 
 import (
-	"github.com/risor-io/risor/errz"
-	"github.com/risor-io/risor/object"
+	"github.com/AMuzykus/risor/errz"
+	"github.com/AMuzykus/risor/object"
 )
 
 func mapGetStr(m *object.Map, key string) (string, bool, error) {

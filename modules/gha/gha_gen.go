@@ -4,7 +4,7 @@ package gha
 
 import (
 	"context"
-	"github.com/risor-io/risor/object"
+	"github.com/AMuzykus/risor/object"
 )
 
 // IsDebug is a wrapper function around [isDebug]

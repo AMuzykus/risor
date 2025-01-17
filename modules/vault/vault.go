@@ -7,12 +7,12 @@ import (
 	"context"
 	"time"
 
+	"github.com/AMuzykus/risor/arg"
+	"github.com/AMuzykus/risor/errz"
+	"github.com/AMuzykus/risor/object"
+	"github.com/AMuzykus/risor/op"
 	"github.com/hashicorp/vault-client-go"
 	"github.com/hashicorp/vault-client-go/schema"
-	"github.com/risor-io/risor/arg"
-	"github.com/risor-io/risor/errz"
-	"github.com/risor-io/risor/object"
-	"github.com/risor-io/risor/op"
 )
 
 const VAULT object.Type = "vault"

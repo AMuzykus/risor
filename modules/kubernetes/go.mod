@@ -1,13 +1,13 @@
-module github.com/risor-io/risor/modules/kubernetes
+module github.com/AMuzykus/risor/modules/kubernetes
 
 go 1.22.0
 
 toolchain go1.22.2
 
-replace github.com/risor-io/risor => ../..
+replace github.com/AMuzykus/risor => ../..
 
 require (
-	github.com/risor-io/risor v1.7.0
+	github.com/AMuzykus/risor v1.7.0
 	k8s.io/apimachinery v0.31.0
 	k8s.io/client-go v0.31.0
 	sigs.k8s.io/controller-runtime v0.19.0

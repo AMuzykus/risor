@@ -14,10 +14,10 @@ import (
 	_ "github.com/microsoft/go-mssqldb"
 	"github.com/xo/dburl"
 
-	"github.com/risor-io/risor/arg"
-	"github.com/risor-io/risor/errz"
-	"github.com/risor-io/risor/object"
-	"github.com/risor-io/risor/op"
+	"github.com/AMuzykus/risor/arg"
+	"github.com/AMuzykus/risor/errz"
+	"github.com/AMuzykus/risor/object"
+	"github.com/AMuzykus/risor/op"
 )
 
 const DB_CONN object.Type = "db.conn"

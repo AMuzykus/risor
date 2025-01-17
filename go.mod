@@ -1,4 +1,4 @@
-module github.com/risor-io/risor
+module github.com/AMuzykus/risor
 
 go 1.22.0
 
@@ -8,7 +8,7 @@ require (
 	github.com/fatih/color v1.17.0
 	github.com/mattn/go-isatty v0.0.20
 	github.com/olekukonko/tablewriter v0.0.5
-	github.com/risor-io/risor/modules/gha v1.6.1-0.20240927135333-245e7b83abf4
+	github.com/AMuzykus/risor/modules/gha v1.6.1-0.20240927135333-245e7b83abf4
 	github.com/stretchr/testify v1.9.0
 	gopkg.in/yaml.v3 v3.0.1
 )

@@ -1,6 +1,7 @@
 /risor
 /tmp*
 .vscode
+vscode
 node_modules
 
 risor*.vsix
@@ -25,3 +26,5 @@ terraform.tfstate.backup
 test/
 coverage.out
 unit-tests.xml
+
+tests/andromeda

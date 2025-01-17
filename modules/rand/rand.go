@@ -6,8 +6,8 @@ import (
 	"encoding/binary"
 	"math/rand"
 
-	"github.com/risor-io/risor/arg"
-	"github.com/risor-io/risor/object"
+	"github.com/AMuzykus/risor/arg"
+	"github.com/AMuzykus/risor/object"
 )
 
 func Seed() {

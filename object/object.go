@@ -22,8 +22,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/risor-io/risor/errz"
-	"github.com/risor-io/risor/op"
+	"github.com/AMuzykus/risor/errz"
+	"github.com/AMuzykus/risor/op"
 )
 
 // Type of an object as a string.

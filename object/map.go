@@ -8,7 +8,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/risor-io/risor/op"
+	"github.com/AMuzykus/risor/op"
 )
 
 type Map struct {

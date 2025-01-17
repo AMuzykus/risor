@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/risor-io/risor/object"
+	"github.com/AMuzykus/risor/object"
 )
 
 func NewHttpRequest(ctx context.Context, args ...object.Object) object.Object {

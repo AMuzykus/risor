@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/risor-io/risor/compiler"
-	"github.com/risor-io/risor/object"
-	"github.com/risor-io/risor/parser"
-	"github.com/risor-io/risor/vm"
+	"github.com/AMuzykus/risor/compiler"
+	"github.com/AMuzykus/risor/object"
+	"github.com/AMuzykus/risor/parser"
+	"github.com/AMuzykus/risor/vm"
 )
 
 //go:generate go run ./cmd/risor-modgen

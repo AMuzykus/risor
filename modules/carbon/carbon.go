@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/AMuzykus/risor/arg"
+	"github.com/AMuzykus/risor/object"
+	"github.com/AMuzykus/risor/op"
 	"github.com/golang-module/carbon/v2"
-	"github.com/risor-io/risor/arg"
-	"github.com/risor-io/risor/object"
-	"github.com/risor-io/risor/op"
 )
 
 var _ object.Object = (*Carbon)(nil)

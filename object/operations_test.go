@@ -3,8 +3,8 @@ package object
 import (
 	"testing"
 
-	"github.com/risor-io/risor/errz"
-	"github.com/risor-io/risor/op"
+	"github.com/AMuzykus/risor/errz"
+	"github.com/AMuzykus/risor/op"
 	"github.com/stretchr/testify/require"
 )
 

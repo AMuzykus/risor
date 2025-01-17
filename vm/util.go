@@ -3,8 +3,8 @@ package vm
 import (
 	"fmt"
 
-	"github.com/risor-io/risor/errz"
-	"github.com/risor-io/risor/object"
+	"github.com/AMuzykus/risor/errz"
+	"github.com/AMuzykus/risor/object"
 )
 
 func checkCallArgs(fn *object.Function, argc int) error {

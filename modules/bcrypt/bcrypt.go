@@ -3,7 +3,7 @@ package bcrypt
 import (
 	"context"
 
-	"github.com/risor-io/risor/object"
+	"github.com/AMuzykus/risor/object"
 	"golang.org/x/crypto/bcrypt"
 )
 

@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/risor-io/risor/object"
+	"github.com/AMuzykus/risor/object"
 )
 
 func NSLookup(ctx context.Context, args ...object.Object) object.Object {

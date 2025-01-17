@@ -8,8 +8,8 @@ import (
 	"encoding/json"
 	"reflect"
 
-	"github.com/risor-io/risor/arg"
-	"github.com/risor-io/risor/object"
+	"github.com/AMuzykus/risor/arg"
+	"github.com/AMuzykus/risor/object"
 )
 
 func NewMethod(name string, obj interface{}, method *GoMethod) *object.Builtin {

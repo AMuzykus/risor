@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/risor-io/risor/op"
+	"github.com/AMuzykus/risor/op"
 )
 
 // GoField represents a single field on a Go type that can be read or written.

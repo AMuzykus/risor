@@ -54,7 +54,7 @@ brews:
       name: Curtis Myzie
       email: info@cmds.dev
     directory: Formula
-    homepage: "https://github.com/risor-io/risor"
+    homepage: "https://github.com/AMuzykus/risor"
     description: "An embedded scripting language for Go projects"
     license: "Apache-2.0"
 # The lines beneath this are called `modelines`. See `:help modeline`
