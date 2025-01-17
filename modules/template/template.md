@@ -14,7 +14,7 @@ Returns the rendered template as a string.
 It includes all the sprig lib functions.
 You can access environment variables from the template under .Env and the passed values will be available under .Values in the template
 
-If compiled with [`-tags k8s`](https://github.com/risor-io/risor#build-and-install-the-cli-from-source),
+If compiled with [`-tags k8s`](https://github.com/AMuzykus/risor#build-and-install-the-cli-from-source),
 it also includes a k8sLookup function to get values from k8s objects.
 
 ```go filename="Example"

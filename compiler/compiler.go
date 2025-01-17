@@ -7,9 +7,9 @@ import (
 	"math"
 	"sort"
 
-	"github.com/risor-io/risor/ast"
-	"github.com/risor-io/risor/op"
-	"github.com/risor-io/risor/token"
+	"github.com/AMuzykus/risor/ast"
+	"github.com/AMuzykus/risor/op"
+	"github.com/AMuzykus/risor/token"
 )
 
 const (

@@ -4,9 +4,9 @@ import (
 	"context"
 	_ "embed"
 
+	"github.com/AMuzykus/risor/object"
 	"github.com/jmespath-community/go-jmespath/pkg/api"
 	"github.com/jmespath-community/go-jmespath/pkg/parsing"
-	"github.com/risor-io/risor/object"
 )
 
 func Jmespath(ctx context.Context, args ...object.Object) object.Object {

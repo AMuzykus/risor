@@ -1,7 +1,7 @@
 package arg
 
 import (
-	"github.com/risor-io/risor/object"
+	"github.com/AMuzykus/risor/object"
 )
 
 func Require(funcName string, count int, args []object.Object) *object.Error {

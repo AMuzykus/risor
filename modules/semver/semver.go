@@ -7,9 +7,9 @@ import (
 	"context"
 	"strings"
 
+	"github.com/AMuzykus/risor/arg"
+	"github.com/AMuzykus/risor/object"
 	"github.com/blang/semver/v4"
-	"github.com/risor-io/risor/arg"
-	"github.com/risor-io/risor/object"
 )
 
 func Parse(ctx context.Context, args ...object.Object) object.Object {

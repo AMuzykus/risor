@@ -10,11 +10,11 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/risor-io/risor/compiler"
-	"github.com/risor-io/risor/errz"
-	"github.com/risor-io/risor/importer"
-	"github.com/risor-io/risor/object"
-	"github.com/risor-io/risor/op"
+	"github.com/AMuzykus/risor/compiler"
+	"github.com/AMuzykus/risor/errz"
+	"github.com/AMuzykus/risor/importer"
+	"github.com/AMuzykus/risor/object"
+	"github.com/AMuzykus/risor/op"
 )
 
 const (
@@ -794,9 +794,15 @@ func (vm *VirtualMachine) callObject(
 		return nil
 	case object.Callable:
 		result := fn.Call(ctx, args...)
-		if err, ok := result.(*object.Error); ok && err.IsRaised() {
+		err, ok := result.(*object.Error)
+		if err != nil && ok && err.IsRaised() {
 			return err.Value()
 		}
+		/*
+			if err, ok := result.(*object.Error); ok && err.IsRaised() {
+				return err.Value()
+			}
+		*/
 		vm.push(result)
 		return nil
 	case *object.Partial:

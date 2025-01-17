@@ -4,7 +4,7 @@ import { Callout } from 'nextra/components';
 
 <Callout type="info" emoji="ℹ️">
   This module requires that Risor has been compiled with the `k8s` Go build tag.
-  When compiling **manually**, [make sure you specify `-tags k8s`](https://github.com/risor-io/risor#build-and-install-the-cli-from-source).
+  When compiling **manually**, [make sure you specify `-tags k8s`](https://github.com/AMuzykus/risor#build-and-install-the-cli-from-source).
 </Callout>
 
 Module `k8s` provides methods for getting, listing, deleting and updating resources using the Kubernetes API.

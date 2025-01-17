@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/risor-io/risor/ast"
-	"github.com/risor-io/risor/op"
-	"github.com/risor-io/risor/parser"
-	"github.com/risor-io/risor/token"
+	"github.com/AMuzykus/risor/ast"
+	"github.com/AMuzykus/risor/op"
+	"github.com/AMuzykus/risor/parser"
+	"github.com/AMuzykus/risor/token"
 	"github.com/stretchr/testify/require"
 )
 

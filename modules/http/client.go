@@ -2,6 +2,7 @@ package http
 
 import (
 	"context"
+	"crypto/tls"
 	"fmt"
 	"net"
 	"net/http"
@@ -9,7 +10,9 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/risor-io/risor/object"
+	// "log"
+
+	"github.com/AMuzykus/risor/object"
 )
 
 func NewHTTPClientFromParams(params *object.Map) (*http.Client, error) {
@@ -29,11 +32,38 @@ func NewHTTPClientFromParams(params *object.Map) (*http.Client, error) {
 		}
 	}
 
+	tlsConfig := tls.Config{}
+	if tlsClientConfigObj := params.GetWithDefault("tls_client_config", nil); tlsClientConfigObj != nil {
+		tlsClientConfig, err := object.AsMap(tlsClientConfigObj)
+		if err != nil {
+			return nil, err
+		}
+		// Process InsecureSkipVerify option
+		if tlsInsecureSkipVerifyObj := tlsClientConfig.GetWithDefault("insecure_skip_verify", nil); tlsInsecureSkipVerifyObj != nil {
+			tlsInsecureSkipVerify, errObj := object.AsBool(tlsInsecureSkipVerifyObj)
+			if errObj != nil {
+				return nil, errObj.Value()
+			}
+			tlsConfig.InsecureSkipVerify = tlsInsecureSkipVerify
+		}
+		// Process Certificates option
+		if tlsCertFileObj, tlsKeyFileObj := tlsClientConfig.GetWithDefault("cert_file", nil), tlsClientConfig.GetWithDefault("key_file", nil); tlsCertFileObj != nil && tlsKeyFileObj != nil {
+			tlsCertFile, _ := object.AsString(tlsCertFileObj)
+			tlsKeyFile, _ := object.AsString(tlsKeyFileObj)
+			cert, err := tls.LoadX509KeyPair(tlsCertFile, tlsKeyFile)
+			if err != nil {
+				return nil, err
+			}
+			tlsConfig.Certificates = []tls.Certificate{cert}
+		}
+	}
+
 	transport := &http.Transport{
 		Proxy:                 http.ProxyFromEnvironment,
 		ForceAttemptHTTP2:     true,
 		MaxIdleConns:          100,
 		IdleConnTimeout:       90 * time.Second,
+		TLSClientConfig:       &tlsConfig,
 		TLSHandshakeTimeout:   10 * time.Second,
 		ExpectContinueTimeout: 1 * time.Second,
 	}

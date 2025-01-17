@@ -5,9 +5,9 @@ import (
 	"log"
 	"testing"
 
-	"github.com/risor-io/risor/compiler"
-	"github.com/risor-io/risor/parser"
-	"github.com/risor-io/risor/vm"
+	"github.com/AMuzykus/risor/compiler"
+	"github.com/AMuzykus/risor/parser"
+	"github.com/AMuzykus/risor/vm"
 )
 
 func BenchmarkRisor_Fibonacci35(b *testing.B) {

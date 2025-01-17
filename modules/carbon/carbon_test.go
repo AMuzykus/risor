@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
+	"github.com/AMuzykus/risor/object"
 	"github.com/golang-module/carbon/v2"
-	"github.com/risor-io/risor/object"
 	"github.com/stretchr/testify/require"
 )
 

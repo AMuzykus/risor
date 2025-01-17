@@ -4,7 +4,7 @@ import (
 	"context"
 	"strings"
 
-	"github.com/risor-io/risor/object"
+	"github.com/AMuzykus/risor/object"
 )
 
 func RenderTemplate(ctx context.Context, args ...object.Object) object.Object {

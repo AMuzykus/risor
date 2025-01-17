@@ -1,7 +1,7 @@
 package vm
 
 import (
-	"github.com/risor-io/risor/importer"
+	"github.com/AMuzykus/risor/importer"
 )
 
 // Option is a configuration function for a Virtual Machine.

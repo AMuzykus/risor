@@ -1,9 +1,9 @@
-module github.com/risor-io/risor/modules/gha
+module github.com/AMuzykus/risor/modules/gha
 
 go 1.22.0
 
 toolchain go1.23.1
 
-replace github.com/risor-io/risor => ../..
+replace github.com/AMuzykus/risor => ../..
 
-require github.com/risor-io/risor v1.7.0
+require github.com/AMuzykus/risor v1.7.0

@@ -4,8 +4,8 @@ import (
 	"context"
 	"regexp"
 
-	"github.com/risor-io/risor/arg"
-	"github.com/risor-io/risor/object"
+	"github.com/AMuzykus/risor/arg"
+	"github.com/AMuzykus/risor/object"
 )
 
 func Compile(ctx context.Context, args ...object.Object) object.Object {

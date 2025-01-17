@@ -9,7 +9,7 @@ automatic help generation.
 <Callout type="info" emoji="ℹ️">
   This module is included by default in the Risor CLI, but must be
   independently installed when using Risor as
-  a library using `go get github.com/risor-io/risor/modules/cli`
+  a library using `go get github.com/AMuzykus/risor/modules/cli`
 </Callout>
 
 Behind the scenes, this module uses the [urfave/cli](https://cli.urfave.org/) library.

@@ -10,14 +10,14 @@ import (
 	"strings"
 	"syscall"
 
+	"github.com/AMuzykus/risor/object"
+	ros "github.com/AMuzykus/risor/os"
+	"github.com/AMuzykus/risor/os/s3fs"
 	"github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/service/s3"
 	"github.com/fatih/color"
 	"github.com/hokaccha/go-prettyjson"
 	"github.com/mattn/go-isatty"
-	"github.com/risor-io/risor/object"
-	ros "github.com/risor-io/risor/os"
-	"github.com/risor-io/risor/os/s3fs"
 	"github.com/spf13/viper"
 )
 

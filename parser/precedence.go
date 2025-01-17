@@ -1,6 +1,6 @@
 package parser
 
-import "github.com/risor-io/risor/token"
+import "github.com/AMuzykus/risor/token"
 
 // Precedence order for operators
 const (

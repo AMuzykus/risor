@@ -3,9 +3,9 @@ package color
 import (
 	"context"
 
+	"github.com/AMuzykus/risor/arg"
+	"github.com/AMuzykus/risor/object"
 	"github.com/fatih/color"
-	"github.com/risor-io/risor/arg"
-	"github.com/risor-io/risor/object"
 )
 
 func Set(ctx context.Context, args ...object.Object) object.Object {

@@ -8,10 +8,10 @@ import (
 	"io"
 	"strings"
 
+	"github.com/AMuzykus/risor/compiler"
+	"github.com/AMuzykus/risor/op"
 	"github.com/fatih/color"
 	"github.com/olekukonko/tablewriter"
-	"github.com/risor-io/risor/compiler"
-	"github.com/risor-io/risor/op"
 )
 
 var (

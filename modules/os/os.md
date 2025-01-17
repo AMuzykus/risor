@@ -5,7 +5,7 @@ functionality.
 
 By default, this module interacts with the host operating system normally by
 calling the underlying Go `os` package. However, alternative OS abstraction
-layers may be used via the Go [WithOS](https://pkg.go.dev/github.com/risor-io/risor@v1.2.0/os#WithOS) function. This assists with sandboxing scripts and providing
+layers may be used via the Go [WithOS](https://pkg.go.dev/github.com/AMuzykus/risor@v1.2.0/os#WithOS) function. This assists with sandboxing scripts and providing
 access to object storage like AWS S3 via a filesystem-like interface.
 
 ## Attributes

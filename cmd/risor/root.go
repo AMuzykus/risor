@@ -9,12 +9,12 @@ import (
 	"strings"
 	"time"
 
+	"github.com/AMuzykus/risor"
+	"github.com/AMuzykus/risor/cmd/risor/repl"
+	"github.com/AMuzykus/risor/errz"
+	ros "github.com/AMuzykus/risor/os"
 	"github.com/fatih/color"
 	"github.com/mitchellh/go-homedir"
-	"github.com/risor-io/risor"
-	"github.com/risor-io/risor/cmd/risor/repl"
-	"github.com/risor-io/risor/errz"
-	ros "github.com/risor-io/risor/os"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

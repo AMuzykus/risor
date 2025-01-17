@@ -5,7 +5,7 @@ import (
 	"encoding/base64"
 	"testing"
 
-	"github.com/risor-io/risor/object"
+	"github.com/AMuzykus/risor/object"
 	"github.com/stretchr/testify/require"
 )
 

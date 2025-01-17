@@ -4,7 +4,7 @@ import { Callout } from 'nextra/components';
 
 <Callout type="info" emoji="ℹ️">
   This module requires that Risor has been compiled with the `vault` Go build tag.
-  When compiling **manually**, [make sure you specify `-tags vault`](https://github.com/risor-io/risor#build-and-install-the-cli-from-source).
+  When compiling **manually**, [make sure you specify `-tags vault`](https://github.com/AMuzykus/risor#build-and-install-the-cli-from-source).
 </Callout>
 
 Module `vault` provides a client to interact with Hashicorp Vault

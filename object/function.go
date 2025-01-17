@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/risor-io/risor/compiler"
-	"github.com/risor-io/risor/errz"
-	"github.com/risor-io/risor/op"
+	"github.com/AMuzykus/risor/compiler"
+	"github.com/AMuzykus/risor/errz"
+	"github.com/AMuzykus/risor/op"
 )
 
 // Function is a function that has been compiled to bytecode.

@@ -15,8 +15,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/risor-io/risor/arg"
-	"github.com/risor-io/risor/object"
+	"github.com/AMuzykus/risor/arg"
+	"github.com/AMuzykus/risor/object"
 	"gopkg.in/yaml.v3"
 )
 

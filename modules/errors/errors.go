@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/risor-io/risor/object"
+	"github.com/AMuzykus/risor/object"
 )
 
 func getFormatAndValues(args []object.Object) (string, []interface{}, *object.Error) {

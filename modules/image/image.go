@@ -6,10 +6,10 @@ import (
 	"context"
 	"image"
 
+	"github.com/AMuzykus/risor/arg"
+	"github.com/AMuzykus/risor/builtins"
+	"github.com/AMuzykus/risor/object"
 	"github.com/anthonynsimon/bild/imgio"
-	"github.com/risor-io/risor/arg"
-	"github.com/risor-io/risor/builtins"
-	"github.com/risor-io/risor/object"
 )
 
 func Decode(ctx context.Context, args ...object.Object) object.Object {

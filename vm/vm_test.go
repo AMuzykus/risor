@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/risor-io/risor/compiler"
-	"github.com/risor-io/risor/errz"
-	"github.com/risor-io/risor/object"
-	"github.com/risor-io/risor/parser"
+	"github.com/AMuzykus/risor/compiler"
+	"github.com/AMuzykus/risor/errz"
+	"github.com/AMuzykus/risor/object"
+	"github.com/AMuzykus/risor/parser"
 	"github.com/stretchr/testify/require"
 )
 

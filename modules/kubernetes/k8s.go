@@ -20,7 +20,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 	"sigs.k8s.io/yaml"
 
-	"github.com/risor-io/risor/object"
+	"github.com/AMuzykus/risor/object"
 )
 
 var k8sClient client.Client

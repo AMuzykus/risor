@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/risor-io/risor/limits"
-	"github.com/risor-io/risor/object"
-	"github.com/risor-io/risor/op"
+	"github.com/AMuzykus/risor/limits"
+	"github.com/AMuzykus/risor/object"
+	"github.com/AMuzykus/risor/op"
 )
 
 const HTTP_RESPONSE object.Type = "http_response"

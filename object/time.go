@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/risor-io/risor/errz"
-	"github.com/risor-io/risor/op"
+	"github.com/AMuzykus/risor/errz"
+	"github.com/AMuzykus/risor/op"
 )
 
 type Time struct {

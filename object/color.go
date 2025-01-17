@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"image/color"
 
-	"github.com/risor-io/risor/op"
+	"github.com/AMuzykus/risor/op"
 )
 
 type Color struct {
