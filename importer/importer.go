@@ -22,7 +22,7 @@ type Importer interface {
 type LocalImporter struct {
 	globalNames []string
 	codeCache   map[string]*compiler.Code
-	sourceDir   string
+	sourceDirs  []string
 	extensions  []string
 	mutex       sync.Mutex
 }
@@ -33,8 +33,8 @@ type LocalImporterOptions struct {
 	// Global names that should be available when the module is compiled.
 	GlobalNames []string
 
-	// The directory to search for Risor modules.
-	SourceDir string
+	// The directories to search for Risor modules.
+	SourceDirs []string
 
 	// Optional list of file extensions to try when locating a Risor module.
 	Extensions []string
@@ -53,7 +53,7 @@ func NewLocalImporter(opts LocalImporterOptions) *LocalImporter {
 	return &LocalImporter{
 		globalNames: opts.GlobalNames,
 		codeCache:   map[string]*compiler.Code{},
-		sourceDir:   opts.SourceDir,
+		sourceDirs:   opts.SourceDirs,
 		extensions:  opts.Extensions,
 	}
 }
@@ -64,7 +64,13 @@ func (i *LocalImporter) Import(ctx context.Context, name string) (*object.Module
 	if code, ok := i.codeCache[name]; ok {
 		return object.NewModule(name, code), nil
 	}
-	source, found := readFileWithExtensions(i.sourceDir, name, i.extensions)
+	found := false
+	var source string
+	for _, sourceDir := range i.sourceDirs {
+		if source, found = readFileWithExtensions(sourceDir, name, i.extensions); found {
+			break
+		}
+	}
 	if !found {
 		return nil, fmt.Errorf("import error: module %q not found", name)
 	}

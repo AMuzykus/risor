@@ -348,7 +348,7 @@ func TestWithGlobalOverride(t *testing.T) {
 func TestWithLocalImporter(t *testing.T) {
 	result, err := Eval(context.Background(),
 		`import data; data.mydata.count`,
-		WithLocalImporter("./vm/fixtures"))
+		WithLocalImporter([]string{"./vm/fixtures"}))
 	require.Nil(t, err)
 	require.Equal(t, object.NewInt(1), result)
 }
