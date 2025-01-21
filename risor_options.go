@@ -63,9 +63,9 @@ func WithImporter(i importer.Importer) Option {
 }
 
 // WithLocalImporter enables importing Risor modules from the given directory.
-func WithLocalImporter(path string) Option {
+func WithLocalImporter(paths []string) Option {
 	return func(cfg *Config) {
-		cfg.localImportPath = path
+		cfg.localImportPaths = paths
 	}
 }
 

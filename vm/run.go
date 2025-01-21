@@ -73,7 +73,7 @@ func newVM(ctx context.Context, source string, opts ...runOpts) (*VirtualMachine
 		return nil, err
 	}
 	im := importer.NewLocalImporter(importer.LocalImporterOptions{
-		SourceDir:   "./fixtures",
+		SourceDirs:   []string{"./fixtures"},
 		Extensions:  []string{".risor", ".rsr"},
 		GlobalNames: globalNames,
 	})

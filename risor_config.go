@@ -35,7 +35,7 @@ type Config struct {
 	overrides             map[string]any
 	denylist              map[string]bool
 	importer              importer.Importer
-	localImportPath       string
+	localImportPaths      []string
 	withoutDefaultGlobals bool
 	withConcurrency       bool
 	listenersAllowed      bool
@@ -212,12 +212,12 @@ func (cfg *Config) VMOpts() []vm.Option {
 		opts = append(opts, vm.WithGlobals(globals))
 	}
 	importer := cfg.importer
-	if importer == nil && cfg.localImportPath != "" {
+	if importer == nil && cfg.localImportPaths != nil {
 		var names []string
 		for name := range globals {
 			names = append(names, name)
 		}
-		importer = newLocalImporter(names, cfg.localImportPath)
+		importer = newLocalImporter(names, cfg.localImportPaths)
 	}
 	if importer != nil {
 		opts = append(opts, vm.WithImporter(importer))
@@ -228,10 +228,10 @@ func (cfg *Config) VMOpts() []vm.Option {
 	return opts
 }
 
-func newLocalImporter(globalNames []string, sourceDir string) importer.Importer {
+func newLocalImporter(globalNames []string, sourceDirs []string) importer.Importer {
 	return importer.NewLocalImporter(importer.LocalImporterOptions{
 		GlobalNames: globalNames,
-		SourceDir:   sourceDir,
+		SourceDirs:  sourceDirs,
 		Extensions:  []string{".risor", ".rsr"},
 	})
 }
