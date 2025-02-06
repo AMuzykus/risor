@@ -93,7 +93,7 @@ func getRisorOptions() []risor.Option {
 		getGlobals(),
 	}
 	if modulesDir := viper.GetString("modules"); modulesDir != "" {
-		opts = append(opts, risor.WithLocalImporter(modulesDir))
+		opts = append(opts, risor.WithLocalImporter([]string{modulesDir}))
 	}
 	return opts
 }
