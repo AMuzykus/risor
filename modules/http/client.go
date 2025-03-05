@@ -58,6 +58,16 @@ func NewHTTPClientFromParams(params *object.Map) (*http.Client, error) {
 		}
 	}
 
+	// Process DisableKeepAlives option
+	disableKeepAlives := false
+	if disableKeepAlivesObj := params.GetWithDefault("disable_keep_alives", nil); disableKeepAlivesObj != nil {
+		disableKeepAlivesVal, errObj := object.AsBool(disableKeepAlivesObj)
+		if errObj != nil {
+			return nil, errObj.Value()
+		}
+		disableKeepAlives = disableKeepAlivesVal
+	}
+
 	transport := &http.Transport{
 		Proxy:                 http.ProxyFromEnvironment,
 		ForceAttemptHTTP2:     true,
@@ -66,8 +76,7 @@ func NewHTTPClientFromParams(params *object.Map) (*http.Client, error) {
 		TLSClientConfig:       &tlsConfig,
 		TLSHandshakeTimeout:   10 * time.Second,
 		ExpectContinueTimeout: 1 * time.Second,
-		// !!! For testing goals
-		DisableKeepAlives: 	   true,
+		DisableKeepAlives: 	   disableKeepAlives,
 	}
 
 	if proxyObj := params.GetWithDefault("proxy", nil); proxyObj != nil {
