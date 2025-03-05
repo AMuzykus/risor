@@ -66,6 +66,8 @@ func NewHTTPClientFromParams(params *object.Map) (*http.Client, error) {
 		TLSClientConfig:       &tlsConfig,
 		TLSHandshakeTimeout:   10 * time.Second,
 		ExpectContinueTimeout: 1 * time.Second,
+		// !!! For testing goals
+		DisableKeepAlives: 	   true,
 	}
 
 	if proxyObj := params.GetWithDefault("proxy", nil); proxyObj != nil {
