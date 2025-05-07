@@ -25,7 +25,9 @@ git tag modules/sql/$VERSION
 git tag modules/template/$VERSION
 git tag modules/uuid/$VERSION
 git tag modules/vault/$VERSION
+git tag modules/ws/$VERSION
 git tag os/s3fs/$VERSION
+
 
 git push origin $VERSION
 git push origin cmd/risor/$VERSION
@@ -43,4 +45,5 @@ git push origin modules/sql/$VERSION
 git push origin modules/template/$VERSION
 git push origin modules/uuid/$VERSION
 git push origin modules/vault/$VERSION
+git push origin modules/ws/$VERSION
 git push origin os/s3fs/$VERSION
