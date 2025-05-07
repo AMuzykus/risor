@@ -7,7 +7,7 @@ toolchain go1.23.1
 replace github.com/AMuzykus/risor => ../..
 
 require (
-	github.com/AMuzykus/risor v0.0.4
+	github.com/AMuzykus/risor v0.0.5
 	github.com/coder/websocket v1.8.13
 	github.com/stretchr/testify v1.10.0
 )
