@@ -4,6 +4,7 @@ import (
 	"github.com/AMuzykus/risor/builtins"
 	modBase64 "github.com/AMuzykus/risor/modules/base64"
 	modBytes "github.com/AMuzykus/risor/modules/bytes"
+	modClickHouse "github.com/AMuzykus/risor/modules/clickhouse"	
 	modColor "github.com/AMuzykus/risor/modules/color"
 	modErrors "github.com/AMuzykus/risor/modules/errors"
 	modExec "github.com/AMuzykus/risor/modules/exec"
@@ -22,6 +23,7 @@ import (
 	modStrings "github.com/AMuzykus/risor/modules/strings"
 	modTablewriter "github.com/AMuzykus/risor/modules/tablewriter"
 	modTime "github.com/AMuzykus/risor/modules/time"
+	modWs "github.com/AMuzykus/risor/modules/ws"	
 	modYAML "github.com/AMuzykus/risor/modules/yaml"
 	"github.com/AMuzykus/risor/object"
 )
@@ -31,6 +33,7 @@ func Builtins() map[string]object.Object {
 		"base64":      modBase64.Module(),
 		"bytes":       modBytes.Module(),
 		"color":       modColor.Module(),
+		"clickhouse":  modClickHouse.Module(),
 		"errors":      modErrors.Module(),
 		"exec":        modExec.Module(),
 		"filepath":    modFilepath.Module(),
@@ -48,6 +51,7 @@ func Builtins() map[string]object.Object {
 		"strings":     modStrings.Module(),
 		"tablewriter": modTablewriter.Module(),
 		"time":        modTime.Module(),
+		"ws":          modWs.Module(),
 		"yaml":        modYAML.Module(),
 	}
 	for k, v := range modHTTP.Builtins() {
